@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiU Course</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="" href="assets/favicon.ico">
+    
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Ke Atas">⇪<br>Top</button> 
+    <div class="nav-container">
+        <div class="logo-box">
+          <a href="/">
+            <img src="assets/logo.png">
+          </a>
+        </div>
+        <nav>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#course">Course</a></li>                             
+          <li><a href="#message-us">Message Us</a></li>
+          <li><a href="#profile">Profile</a></li> 
+       </ul>
+      </nav>
+      </div>
+      <hr>
+    <header>
+        <h1>Hey <span id="yourName"></span> !!, Welcome to DigiU Course</h1>
+        <h4>"The future of IT is here. Let us help you build it."</h4>
+        
+        
+        <div class="slideshow-container">
+
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="assets/header.jpg" style="width:100%">
+            <div class="text">Software Engineering</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="assets/digital-marketing.jpg" style="width:100%">
+            <div class="text">Digital Marketing</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="assets/data-analytics.jpg" style="width:100%">
+            <div class="text">Data Analytics</div>
+          </div>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+  <script src="js/script.js"></script>
+        </header>
+
+    <hr>
+
+    <h1 style="text-align: center;" id="course">Course</h1>
+    <div class="course">
+        <div>
+            <div class="course-item" style="background-image: url('assets/se.jpg');"></div>
+            <h5>Software Engineering</h5>
+        </div>
+        <div>
+            <div class="course-item" style="background-image: url('assets/da.jpg');"></div>
+            <h5>Data Analytics</h5>
+        </div>
+        <div>
+            <div class="course-item" style="background-image: url('assets/dm.jpg');"></div>
+            <h5>Digital Marketing</h5>
+        </div>
+    </div>
+    <hr>
+    <div class="column">
+      <div id="message-us">        
+        <h4><u>Message Us</u></h4>      
+            <label for="name">Nama :</label>
+            <input type="text" id="name" name="name"><br>
+            <label for="birthdate">Tanggal Lahir :</label>
+            <input type="date" id="birthdate" name="birthdate"><br>
+            <label for="gender">Jenis Kelamin :</label>
+            <input type="radio" id="laki" name="gender" value="Laki Laki" class="gender">
+            <label for="laki">Laki Laki</label>
+            <input type="radio" id="perempuan" name="gender" value="Perempuan" class="gender">
+            <label for="perempuan">Perempuan</label><br><br>
+            <label for="message">Pesan :</label>
+            <input type="textarea" id="message" name="message"><br>
+            <button id="submit" class="submit" onclick="getAll()">Submit</button>
+            <button id="reset" class="reset" onclick="resetAll()">Reset</button>
+        </div>
+      <di>
+      <h4><u>Result Form Message Us</u></h4>
+            <b>Current Time : </b> <span id="waktu"></span> <br><br>
+            <b>Nama : </b> <span id="nama"></span> <br><br>
+            <b>Tanggal Lahir : </b> <span id="lahir"></span> <br><br>
+            <b>Jenis Kelamin : </b> <span id="kelamin"></span> <br><br>
+            <b>Pesan : </b> <span id="pesan"></span> <br><br>
+      </di>
+    </div>
+  
+   <script src="js/script.js"></script>
+   <hr>
+   <div class="profile">
+    <h3 style="text-align: center;" id="profile">Profile <img src="assets/logo.png" width="60px" height="auto"> Course</h3>
+    <b>Visi :</b>
+    Menjadi platform kursus online terdepan di Indonesia yang menyediakan pengetahuan dan keterampilan yang dibutuhkan untuk karier masa depan.<br><br>
+    <b>Misi :</b>
+    Menyediakan pendidikan berkualitas tinggi yang dapat membantu peserta untuk mengembangkan karier dan meraih kesuksesan di masa depan.  </div>
+   <hr>
+   <div id="footer">
+    <h4 class="copyright">Copyright &copy; siamintea</h4>
+    <h4 class="social"><a href="https://github.com/siamintea" target="_blank"><img src="assets/github-mark.png"></a></h4>
+    <div style="clear: both"></div>
+</div>
+</body>
+</html>
